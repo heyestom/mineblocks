@@ -1,0 +1,15 @@
+[
+{
+"modid": "myfirstmod",
+"name": "myfirstmod",
+"description": "This is my first mod! :D",
+"version": "1.7.2-1.0",
+"mcversion": "1.7.2",
+"url": "",
+"authorList": ["heyestom"],
+"credits": "Following a tut: https://www.youtube.com/watch?v=KchpGhnH5wg",
+"parent": "",
+"screenshots": [],
+"dependencies": []
+}
+]
