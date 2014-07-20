@@ -8,4 +8,6 @@ public class Reference {
     public static final String MOD_NAME = "myfirstmod";
     public static final String MOD_VERSION = "myfirstmod";
 
+
+    public static final String GUI_FACTORY_CLASS = "com.tom.myfirstmod.client.gui.GUIFactory";
 }

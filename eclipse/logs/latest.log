@@ -1,12 +1,12 @@
-[19:07:24] [main/INFO]: Setting user: ForgeDevName
-[19:07:25] [Client thread/INFO]: LWJGL Version: 2.9.1
-[19:07:31] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:myfirstmod
-[19:07:32] [Sound Library Loader/INFO]: Sound engine started
-[19:07:32] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[19:07:32] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[19:07:32] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:myfirstmod
-[19:07:32] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[19:07:32] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[19:07:33] [Sound Library Loader/INFO]: Sound engine started
-[19:07:34] [MCO Availability Checker #1/ERROR]: Couldn't connect to Realms
-[19:55:34] [Client thread/INFO]: Stopping!
+[13:38:17] [main/ERROR]: Can't find the resource index file: /Users/theyes/.gradle/caches/minecraft/assets/virtual/{ASSET_INDEX}/indexes/{ASSET_INDEX}.json
+[13:38:17] [main/INFO]: Setting user: ForgeDevName
+[13:38:18] [Client thread/INFO]: LWJGL Version: 2.9.1
+[13:38:24] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:myfirstmod
+[13:38:25] [Sound Library Loader/INFO]: Sound engine started
+[13:38:25] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[13:38:25] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[13:38:25] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:myfirstmod
+[13:38:25] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[13:38:26] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[13:38:26] [Sound Library Loader/INFO]: Sound engine started
+[13:39:20] [Client thread/INFO]: Stopping!
