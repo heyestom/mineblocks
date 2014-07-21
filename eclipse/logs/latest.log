@@ -1,12 +1,11 @@
-[13:38:17] [main/ERROR]: Can't find the resource index file: /Users/theyes/.gradle/caches/minecraft/assets/virtual/{ASSET_INDEX}/indexes/{ASSET_INDEX}.json
-[13:38:17] [main/INFO]: Setting user: ForgeDevName
-[13:38:18] [Client thread/INFO]: LWJGL Version: 2.9.1
-[13:38:24] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:myfirstmod
-[13:38:25] [Sound Library Loader/INFO]: Sound engine started
-[13:38:25] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[13:38:25] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[13:38:25] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:myfirstmod
-[13:38:25] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[13:38:26] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[13:38:26] [Sound Library Loader/INFO]: Sound engine started
-[13:39:20] [Client thread/INFO]: Stopping!
+[00:30:34] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4200056ms behind, skipping 84001 tick(s)
+[08:25:37] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 28471016ms behind, skipping 569420 tick(s)
+[08:25:39] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2338ms behind, skipping 46 tick(s)
+[09:16:48] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 1141452ms behind, skipping 22829 tick(s)
+[09:17:07] [Client thread/INFO]: Stopping!
+[09:17:07] [Server thread/INFO]: Stopping server
+[09:17:07] [Server thread/INFO]: Saving players
+[09:17:07] [Server thread/INFO]: Saving worlds
+[09:17:07] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[09:17:07] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[09:17:07] [Server thread/INFO]: Saving chunks for level 'New World'/The End
