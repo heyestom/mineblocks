@@ -1,7 +1,9 @@
 package com.tom.myfirstmod;
 
 import com.tom.myfirstmod.handler.ConfigurationHandler;
+import com.tom.myfirstmod.init.ModBlocks;
 import com.tom.myfirstmod.init.ModItems;
+import com.tom.myfirstmod.init.Recipes;
 import com.tom.myfirstmod.proxy.IProxy;
 import com.tom.myfirstmod.reference.Reference;
 import com.tom.myfirstmod.utility.LogHelper;
@@ -30,12 +32,16 @@ public class myfirstmod {
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
 
         ModItems.init();
+        ModBlocks.init();
 
         LogHelper.info("pre init complete!");
     }
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
+
+        Recipes.init();
+
         LogHelper.info("init complete!");
 
     }
