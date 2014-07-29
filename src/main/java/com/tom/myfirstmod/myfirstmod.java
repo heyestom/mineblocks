@@ -15,6 +15,8 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.OreDictionary;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.MOD_VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
 
@@ -41,6 +43,8 @@ public class myfirstmod {
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
+
+        OreDictionary.registerOre("logWood", new ItemStack(ModBlocks.mapleLog,1, OreDictionary.WILDCARD_VALUE));
 
         Recipes.init();
 

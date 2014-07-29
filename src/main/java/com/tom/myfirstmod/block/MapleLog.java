@@ -1,22 +1,40 @@
 package com.tom.myfirstmod.block;
 
+import com.tom.myfirstmod.init.ModBlocks;
+import com.tom.myfirstmod.init.ModItems;
 import com.tom.myfirstmod.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.block.BlockLog;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
+
+import java.util.Random;
 
 /**
  * Created by theyes on 26/07/2014.
  */
-public class MapleLog extends BlockMyFirstMod {
+public class MapleLog extends BlockLog {
 
     public MapleLog() {
-        super(Material.wood);
+        super();
         this.setBlockName("mapleLog");
         this.setBlockTextureName("mapleLog");
+    }
+
+    @Override
+    public String getUnlocalizedName()
+    {
+        return String.format("tile.%s%s", Reference.MOD_ID.toLowerCase() + ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
+    }
+
+    protected String getUnwrappedUnlocalizedName(String unlocalizedName)
+    {
+        return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
     }
 
     @SideOnly(Side.CLIENT)
@@ -27,17 +45,15 @@ public class MapleLog extends BlockMyFirstMod {
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister)
     {
-        blockIcon = iconRegister.registerIcon(String.format("%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName())));
-        topTexture = iconRegister.registerIcon((Reference.MOD_ID + ":" + "mapleLogTop"));
+        blockIcon = iconRegister.registerIcon((Reference.MOD_ID + ":" + "mapleLog"));
+        topTexture = iconRegister.registerIcon(Reference.MOD_ID + ":" + "mapleLogTop");
     }
 
-    @SideOnly(Side.CLIENT)
-    public IIcon getIcon(int side, int meta){
-        if(side == 0 || side == 1){
-            return this.topTexture;
-        }
-        return this.blockIcon;
+    @Override
+    public Item getItemDropped(int metadata, Random random, int fortune) {
+        return Item.getItemFromBlock(this);
     }
+
 
     @Override
     public boolean isWood(IBlockAccess world, int x, int y, int z) {
@@ -47,5 +63,17 @@ public class MapleLog extends BlockMyFirstMod {
     @Override
     public boolean canSustainLeaves(IBlockAccess world, int x, int y, int z) {
         return true;
+    }
+
+    @SideOnly(Side.CLIENT)
+    protected IIcon getSideIcon(int p_150163_1_)
+    {
+        return blockIcon;
+    }
+
+    @SideOnly(Side.CLIENT)
+    protected IIcon getTopIcon(int p_150161_1_)
+    {
+        return topTexture;
     }
 }

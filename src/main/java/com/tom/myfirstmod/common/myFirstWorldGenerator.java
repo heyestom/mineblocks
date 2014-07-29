@@ -40,14 +40,14 @@ public class myFirstWorldGenerator implements IWorldGenerator {
     }
 
     private void generateSurface(World world, Random random, int chunkX, int chunkY) {
-        for(int k = 0; k < 100; k++) {
+        for(int k = 0; k < 10; k++) {
             int firstBlockXCoord = chunkX + random.nextInt(16);
             int firstBlockYCoord = random.nextInt(70);
             int firstBlockZCoord = chunkY + random.nextInt(16);
 
             // minTreeHeight metaWood metaLeaves vinesGrow
 
-            new ModGenMapleTrees(false,4,0,0,false).generate(world, random, firstBlockXCoord, firstBlockYCoord, firstBlockZCoord);;
+            new ModGenMapleTrees(false,6,0,0,false).generate(world, random, firstBlockXCoord, firstBlockYCoord, firstBlockZCoord);;
 //            new WorldGenMinable(ModBlocks.ukflag, 13).generate(world, random, firstBlockXCoord, firstBlockYCoord, firstBlockZCoord);
         }
     }
