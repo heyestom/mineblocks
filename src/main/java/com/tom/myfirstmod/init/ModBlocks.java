@@ -1,9 +1,6 @@
 package com.tom.myfirstmod.init;
 
-import com.tom.myfirstmod.block.BlockFlag;
-import com.tom.myfirstmod.block.BlockMyFirstMod;
-import com.tom.myfirstmod.block.BlockUKFlag;
-import com.tom.myfirstmod.block.MapleLog;
+import com.tom.myfirstmod.block.*;
 import com.tom.myfirstmod.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
@@ -27,11 +24,13 @@ public class ModBlocks{
     public static final BlockMyFirstMod flag = new BlockFlag();
     public static final BlockMyFirstMod ukflag = new BlockUKFlag();
     public static final BlockMyFirstMod mapleLog = new MapleLog();
+    public static final BlockMyFirstMod mapleLeaves = new MapleLeaves();
 
     public static void init(){
         GameRegistry.registerBlock(flag, "flag");
         GameRegistry.registerBlock(ukflag, "ukflag");
         GameRegistry.registerBlock(mapleLog, "mapleLog");
+        GameRegistry.registerBlock(mapleLeaves, "mapleLeaves");
     }
 
 }

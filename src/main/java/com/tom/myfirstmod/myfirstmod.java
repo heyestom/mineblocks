@@ -1,5 +1,6 @@
 package com.tom.myfirstmod;
 
+import com.tom.myfirstmod.common.myFirstWorldGenerator;
 import com.tom.myfirstmod.handler.ConfigurationHandler;
 import com.tom.myfirstmod.init.ModBlocks;
 import com.tom.myfirstmod.init.ModItems;
@@ -13,6 +14,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.MOD_VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
 
@@ -41,6 +43,8 @@ public class myfirstmod {
     public void init(FMLInitializationEvent event) {
 
         Recipes.init();
+
+        GameRegistry.registerWorldGenerator(new myFirstWorldGenerator(),1);
 
         LogHelper.info("init complete!");
 
