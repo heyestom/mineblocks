@@ -8,6 +8,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.inventory.IInventory;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
@@ -83,5 +84,11 @@ public class BlockMyFirstMod extends Block {
             }
         }
     }
+
+    @Override
+    public Item getItemDropped(int metadata, Random random, int fortune) {
+        return Item.getItemFromBlock(this);
+    }
+
 
 }

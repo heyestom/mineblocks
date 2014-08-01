@@ -16,7 +16,9 @@ public class Recipes {
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.mapleLeaf), " s ", "sss", " s ", 's', "stickWood"));
         GameRegistry.addRecipe(new ShapelessOreRecipe( new ItemStack(ModBlocks.flag), new ItemStack(ModItems.mapleLeaf), new ItemStack(ModItems.mapleLeaf), new ItemStack(ModItems.mapleLeaf)));
 
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Blocks.planks, 4, 0),  "logWood"));
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.maplePlanks, 4, 0),  "logWood"));
+
+//        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Blocks.planks, 4, 0),  "logWood"));
 
     }
 }

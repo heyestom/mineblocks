@@ -40,16 +40,23 @@ public class myFirstWorldGenerator implements IWorldGenerator {
     }
 
     private void generateSurface(World world, Random random, int chunkX, int chunkY) {
-        for(int k = 0; k < 10; k++) {
+        for(int k = 0; k < 30; k++) {
             int firstBlockXCoord = chunkX + random.nextInt(16);
-            int firstBlockYCoord = random.nextInt(70);
+            int firstBlockYCoord = random.nextInt(90);
             int firstBlockZCoord = chunkY + random.nextInt(16);
 
             // minTreeHeight metaWood metaLeaves vinesGrow
 
             new ModGenMapleTrees(false,6,0,0,false).generate(world, random, firstBlockXCoord, firstBlockYCoord, firstBlockZCoord);;
-//            new WorldGenMinable(ModBlocks.ukflag, 13).generate(world, random, firstBlockXCoord, firstBlockYCoord, firstBlockZCoord);
         }
+
+//        for(int k = 0; k < 100; k++) {
+//            int firstBlockXCoord = chunkX + random.nextInt(16);
+//            int firstBlockYCoord = random.nextInt(70);
+//            int firstBlockZCoord = chunkY + random.nextInt(16);
+//
+//            new WorldGenMinable(ModBlocks.ukflag, 13).generate(world, random, firstBlockXCoord, firstBlockYCoord, firstBlockZCoord);
+//        }
     }
 
     private void generateNether(World world, Random random, int i, int i1) {

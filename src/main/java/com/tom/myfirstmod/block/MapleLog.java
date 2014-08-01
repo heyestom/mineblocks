@@ -22,6 +22,9 @@ public class MapleLog extends BlockLog {
 
     public MapleLog() {
         super();
+        this.setHardness(2.0F);
+        this.setResistance(5.0F);
+        this.setStepSound(soundTypeWood);
         this.setBlockName("mapleLog");
         this.setBlockTextureName("mapleLog");
     }
