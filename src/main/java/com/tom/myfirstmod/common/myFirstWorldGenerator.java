@@ -50,6 +50,9 @@ public class myFirstWorldGenerator implements IWorldGenerator {
             new ModGenMapleTrees(false,6,0,0,false).generate(world, random, firstBlockXCoord, firstBlockYCoord, firstBlockZCoord);;
         }
 
+
+        // how to gen ores
+
 //        for(int k = 0; k < 100; k++) {
 //            int firstBlockXCoord = chunkX + random.nextInt(16);
 //            int firstBlockYCoord = random.nextInt(70);

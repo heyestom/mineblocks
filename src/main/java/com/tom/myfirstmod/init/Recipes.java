@@ -14,11 +14,17 @@ public class Recipes {
 
     public static void init(){
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.mapleLeaf), " s ", "sss", " s ", 's', "stickWood"));
+
+
         GameRegistry.addRecipe(new ShapelessOreRecipe( new ItemStack(ModBlocks.flag), new ItemStack(ModItems.mapleLeaf), new ItemStack(ModItems.mapleLeaf), new ItemStack(ModItems.mapleLeaf)));
 
         GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.maplePlanks, 4, 0),  "logWood"));
 
-//        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Blocks.planks, 4, 0),  "logWood"));
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.mapleTap, 1),  new ItemStack(Items.iron_ingot, 1)));
+
+
+        GameRegistry.addSmelting(new ItemStack(ModBlocks.mapleLog), new ItemStack(Items.coal,1),0.35f);
+        GameRegistry.addSmelting(new ItemStack(ModItems.mapleResin) , new ItemStack(ModItems.mapleSyrup,1), 0.35f);
 
     }
 }

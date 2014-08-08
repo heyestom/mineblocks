@@ -1,7 +1,11 @@
 item.myfirstmod:mapleLeaf.name=Maple Leaf of AWESOME!
+item.myfirstmod:mapleResin.name=Maple Resin
+item.myfirstmod:mapleTap.name=Maple Tap
+item.myfirstmod:mapleSyrup.name=Maple Syrup
 tile.myfirstmod:flag.name=Canadian Flag of Awesomeness!!!
 tile.myfirstmod:ukflag.name=UK Flag of Awesomeness!!!
 tile.myfirstmod:mapleLog.name=Maple Log
+tile.myfirstmod:mapleTappedLog.name=Tapped Maple Log
 tile.myfirstmod:mapleLeaves.name=Maple Leaves
 tile.myfirstmod:mapleSapling.name=Maple Sapling
 tile.myfirstmod:maplePlanks.name=Maple Planks

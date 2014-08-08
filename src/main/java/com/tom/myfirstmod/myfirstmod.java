@@ -45,6 +45,7 @@ public class myfirstmod {
     public void init(FMLInitializationEvent event) {
 
         OreDictionary.registerOre("logWood", new ItemStack(ModBlocks.mapleLog,1, OreDictionary.WILDCARD_VALUE));
+        OreDictionary.registerOre("logWood", new ItemStack(ModBlocks.mapleTappedLog,1, OreDictionary.WILDCARD_VALUE));
         OreDictionary.registerOre("plankWood", new ItemStack(ModBlocks.maplePlanks,1, OreDictionary.WILDCARD_VALUE));
 
         Recipes.init();
