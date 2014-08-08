@@ -52,27 +52,27 @@ public class MapleTap extends ItemMyFirstMod {
                 Block block1 = ModBlocks.mapleTappedLog;
                 world.playSoundEffect((double) ((float) x + 0.5F), (double) ((float) y + 0.5F), (double) ((float) z + 0.5F), block1.stepSound.getStepResourcePath(), (block1.stepSound.getVolume() + 1.0F) / 2.0F, block1.stepSound.getPitch() * 0.8F);
 
+
+                Random rand = new Random();
+                int numberOfResinToSpwan = rand.nextInt(3) + 1;
+
+
                 if (world.isRemote) {
                     world.setBlock(x, y, z, block1);
 
+
+                    // read about data watchers
+//                    for (int i = 0; i < numberOfResinToSpwan; i++)
+//                        spawnResin(world, x, y, z);
+//
                     toolStack.damageItem(1, entityPlayer);
 
                     return true;
                 } else {
                     world.setBlock(x, y, z, block1);
 
-
-                    Random rand = new Random();
-
-                    float dX = rand.nextFloat() * 0.8F + 0.1F;
-                    float dY = rand.nextFloat() * 0.8F + 0.1F;
-                    float dZ = rand.nextFloat() * 0.8F + 0.1F;
-
-                    ItemStack itemStack = new ItemStack(ModItems.mapleResin, 3);
-
-                    EntityItem entityItem = new EntityItem(world, x + dX, y + dY, z + dZ, itemStack.copy());
-
-                    world.spawnEntityInWorld(entityItem);
+                    for (int i = 0; i < numberOfResinToSpwan; i++)
+                        spawnResin(world, x, y, z);
 
                     toolStack.damageItem(1, entityPlayer);
                     return true;
@@ -81,6 +81,20 @@ public class MapleTap extends ItemMyFirstMod {
                 return false;
             }
         }
+    }
+
+    private void spawnResin(World world, int x, int y, int z) {
+        Random rand = new Random();
+
+        float dX = rand.nextFloat() * 0.8F + 0.1F;
+        float dY = rand.nextFloat() * 0.8F + 0.1F;
+        float dZ = rand.nextFloat() * 0.8F + 0.1F;
+
+        ItemStack itemStack = new ItemStack(ModItems.mapleResin, 1);
+
+        EntityItem entityItem = new EntityItem(world, x + dX, y + dY, z + dZ, itemStack.copy());
+
+        world.spawnEntityInWorld(entityItem);
     }
 
 
