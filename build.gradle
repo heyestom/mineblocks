@@ -18,11 +18,11 @@ buildscript {
 apply plugin: 'forge'
 
 version = "1.7.10-1.0"
-group= "com.tom.myfirstmod" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "myfirstmod"
+group= "com.tom.maplemod" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "Maple Trees"
 
 minecraft {
-    version = "1.7.10-10.13.0.1187"
+    version = "1.7.10-10.13.0.1199"
 }
 
 dependencies {
